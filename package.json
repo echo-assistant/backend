@@ -1,0 +1,11 @@
+{
+  "name": "echo-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Echo assistant client.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Vedran Blazenka<blazenka.vedran@gmail.com>",
+  "license": "MIT"
+}

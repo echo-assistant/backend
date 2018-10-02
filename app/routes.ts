@@ -1,9 +1,18 @@
-import * as express from 'express';
+import { Request, Response, Router, Application } from 'express';
 
-class Router {
- router: express.Router;
+// import TransactionsController from './Controllers';
 
- constructor(router: express.Router) {
-  this.router = router;
- }
+// TODO
+const router = Router();
+
+router.get('/', ((req: Request, res: Response) => {
+    res.json({ message: 'Hello!'})
+}));
+
+class BaseRouter {
+    public routes(app: Application) {
+        app.use('/api', router)
+    }
 }
+
+export default new BaseRouter()

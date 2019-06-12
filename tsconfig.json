@@ -9,7 +9,9 @@
     "baseUrl": "./app",
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   "include": [
     "app/**/*.ts"
